@@ -15,6 +15,8 @@ import com.infy.ekart.exception.EKartException;
 import com.infy.ekart.repository.CustomerOrderRepository;
 
 //Add the missing annotation
+@Service(value="orderService")
+@Transactional
 public class CustomerOrderServiceImpl implements CustomerOrderService {
 
 	private CustomerOrderRepository orderRepository;
